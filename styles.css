@@ -1,0 +1,93 @@
+body{
+    background-color: 	#22235c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.back{
+    background-image: url("Images/space.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
+h1{
+    color: white;
+    background-color: #6466ec;
+    text-align: center;
+    padding: 15px;
+}
+
+.food {
+	width: 50vw;
+    display: grid;
+}
+
+.fuel{
+    width: 50vw;
+   display: grid;
+}
+
+.activity{
+    width: 50vw;
+    display: grid;
+}
+
+.grid-container{
+    /*display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px*/
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+
+.footer {
+    background-color: #6466ec;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.implanet{
+    width: 50px%;
+    height: 50px;display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media only screen and (min-width: 312px) and (max-width: 820px) {
+    body{
+        font-size: 18px;
+        background-color: lightblue;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1023px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "food food"
+        "fuel fuel"
+        "activity activity"
+        ;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body{
+        font-size: 18px;
+        background-color: lightgreen;
+    }
+
+    main{
+        display: grid;
+    }
+
+}
